@@ -81,3 +81,9 @@ window.onload = function () {
             }
         }
     }
+
+    // Animate man
+    var animate = function () {
+        var drawMe = lives ;
+        drawArray[drawMe]();
+    }
