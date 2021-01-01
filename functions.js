@@ -68,3 +68,16 @@ window.onload = function () {
             correct.appendChild(guess);
         }
     }
+
+    // Show lives
+    comments = function () {
+        showLives.innerHTML = "You have " + lives + " lives";
+        if (lives < 1) {
+            showLives.innerHTML = "Game Over";
+        }
+        for (var i = 0; i < geusses.length; i++) {
+            if (counter + space === geusses.length) {
+                showLives.innerHTML = "You Win!";
+            }
+        }
+    }
