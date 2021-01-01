@@ -87,3 +87,13 @@ window.onload = function () {
         var drawMe = lives ;
         drawArray[drawMe]();
     }
+
+    // Hangman
+    canvas =  function(){
+
+        myStickman = document.getElementById("stickman");
+        context = myStickman.getContext('2d');
+        context.beginPath();
+        context.strokeStyle = "#fff";
+        context.lineWidth = 2;
+    };
