@@ -105,3 +105,10 @@ window.onload = function () {
         context.arc(60, 25, 10, 0, Math.PI*2, true);
         context.stroke();
     }
+
+    draw = function($pathFromx, $pathFromy, $pathTox, $pathToy) {
+
+        context.moveTo($pathFromx, $pathFromy);
+        context.lineTo($pathTox, $pathToy);
+        context.stroke();
+    }
