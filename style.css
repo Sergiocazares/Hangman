@@ -5,3 +5,11 @@ $blue: #82d2e5;
 $grey:#f3f3f3;
 $white: #fff;
 $base-color:$green ;
+
+/* Mixin's */
+
+@mixin transition {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
