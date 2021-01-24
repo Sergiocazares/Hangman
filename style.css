@@ -13,3 +13,18 @@ $base-color:$green ;
     -moz-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
+
+@mixin clear {
+&:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+}
+
+@mixin box-size {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
